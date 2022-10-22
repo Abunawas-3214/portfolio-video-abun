@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="resumify_tm_rightpart_changable_section">
+	<div class="rightpart_inner">
+		<div class="container">
+			<div class="contact_wrapper_all">
+				<div class="contact_wrap">
+					<div class="title">
+						<h3>Get in touch with me</h3>
+					</div>
+					<div class="subtitle">
+						<p>In various projects and collaboration, you can contact me on:  <a href="#">abunawas.arifandi@gmail.com</a></p>
+					</div>
+					<div class="resumify_tm_contact_box">
+						<form action="/" method="POST" class="contact_form" id="contact_form">
+							
+							<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
+							<div class="empty_notice"><span>Please Fill Required Fields</span></div>
+							<div class="first_row">
+								<ul>
+									<li><input id="name" name="name" type="text" placeholder="Name"/></li>
+									<li><input id="email" name="email" type="text" placeholder="Email" /></li>
+								</ul>
+							</div>
+							<div class="second_row">
+								<textarea id="message" name="message" placeholder="Comment"></textarea>
+							</div>
+							<div class="resumify_tm_button" data-position="left">
+								<a id="send_message" href="#">Post Message</a>
+							</div>
+						</form>
+					</div>
+					<div class="social_wrap">
+						<div class="title">
+							<h3>Social Profiles</h3>
+							<p>You can find me on <a href="https://www.instagram.com/itsabun_dis/">Instagram</a>, and <a href="https://www.linkedin.com/in/abunawas-arifandi-753b25186/">Linkedin</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}
+	

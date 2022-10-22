@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load embed_video_tags %}
+
+{% block content %}
+<div class="resumify_tm_rightpart_changable_section">
+    <div class="rightpart_inner">
+        <div class="container">
+            <div class="resumify_tm_portfolio_list">
+                <ul class="gallery_zoom">
+                    
+                    {% for item in Contents %}
+                        <li>
+                            <div class="inner">
+                                <div class="image_wrap">
+                                    {% video item.url '426x240'%}
+                                </div>
+                                <div class="details">
+                                    <h3><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></h3>
+                                    <span>{{ item.role }}</span>
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                        
+                </ul>
+                <div class="resumify_tm_load_more">
+                    <div class="inner">
+                        <a href="#"><span>Load More</span><img class="svg" src="img/svg/spinner.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+	
